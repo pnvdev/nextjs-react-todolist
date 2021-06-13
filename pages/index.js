@@ -33,18 +33,18 @@ export default function TodoList() {
 
   const _formSubmit = (e) => {
     e.preventDefault();
-    addPromise.then((data) => {
-      console.log(data)
-      if (e.target.item.value) {
+    if (e.target.item.value) {
+      addPromise.then((data) => {
+        console.log(data)
         const item = {
           name: e.target.item.value,
           done: false
         }
         setlist([...list, item])
-      }
-      e.target.item.value = "";
-      setInputFocus()
-    })
+        e.target.item.value = "";
+        setInputFocus()
+      })
+    }
   };
 
   const _removeItem = (e, index) => {
