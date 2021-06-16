@@ -21,7 +21,7 @@ yarn dev
 ```
 
 ### The project does
-* Show a form to add items to the list.
+* Shows a form to add items to the list.
 * Each item in the list can be deleted independently.
 * Keeps the list items when I return to the app after closing it, using localStorage.
 * Simulates a delay when loading, saving and deleting elements, as if we were interacting with an external service, using Promise. 
