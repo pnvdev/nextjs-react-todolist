@@ -76,7 +76,7 @@ export default function TodoList() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          LISTA DE COMPRAS
+          TODO LIST
         </h1>
 
         <p className={styles.description}>
